@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: spring-batch-playground-1
+  datasource:
+    url: jdbc:h2:mem:batchdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  batch:
+    jdbc:
+      initialize-schema: always
